@@ -28,3 +28,4 @@ tqdm==4.67.1
 transformers==4.36.2
 uvicorn==0.37.0
 xformers==0.0.22.post7
+peft==0.10.0
