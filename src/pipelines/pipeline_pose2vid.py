@@ -606,7 +606,7 @@ class Pose2VideoPipeline(DiffusionPipeline):
                 pose_fea = pose_feas[:, :, l:r]
 
                 add_flag = False
-                if l > temporal_adaptive_step * temporal_window_size * 2 and motion_bank.shape[1] < 5:
+                if l > temporal_adaptive_step * temporal_window_size * 2 and motion_bank.shape[1] < 4:
                     add_flag, motion_bank = self.calculate_dis(motion_bank, motion_hidden_state, threshold=17.)
                 
                 if do_classifier_free_guidance:
